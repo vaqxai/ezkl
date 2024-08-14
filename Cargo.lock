@@ -1847,7 +1847,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "ezkl"
+name = "ezkl-lib"
 version = "0.0.0"
 dependencies = [
  "alloy",
@@ -2306,7 +2306,7 @@ dependencies = [
 [[package]]
 name = "halo2_proofs"
 version = "0.3.0"
-source = "git+https://github.com/zkonduit/halo2#098ac0ef3b29255e0e2524ecbb4e7e325ae6e7fd#098ac0ef3b29255e0e2524ecbb4e7e325ae6e7fd"
+source = "git+https://github.com/zkonduit/halo2?rev=098ac0e#098ac0ef3b29255e0e2524ecbb4e7e325ae6e7fd"
 dependencies = [
  "blake2b_simd",
  "env_logger",
