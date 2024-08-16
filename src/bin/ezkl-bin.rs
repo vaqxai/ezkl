@@ -21,6 +21,7 @@ use std::env;
 #[tokio::main(flavor = "current_thread")]
 #[cfg(not(target_arch = "wasm32"))]
 pub async fn main() {
+    unsafe { backtrace_on_stack_overflow::enable() };
     let args = Cli::parse();
 
     if let Some(generator) = args.generator {
@@ -50,8 +51,9 @@ pub async fn main() {
             }
         }
     } else {
-        init_logger();
-        error!("No command provided");
+        // init_logger();
+        // error!("No command provided");
+        println!("No cmd");
         std::process::exit(1)
     }
 }

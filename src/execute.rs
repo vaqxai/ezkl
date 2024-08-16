@@ -25,7 +25,7 @@ use crate::tensor::TensorError;
 use crate::EZKL_BUF_CAPACITY;
 use crate::{commands::*, EZKLError};
 use crate::{Commitments, RunArgs};
-#[cfg(not(target_arch = "wasm32"))]
+// #[cfg(not(target_arch = "wasm32"))]
 use colored::Colorize;
 #[cfg(unix)]
 use gag::Gag;
