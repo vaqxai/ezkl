@@ -21,7 +21,6 @@ use std::env;
 #[tokio::main(flavor = "current_thread")]
 #[cfg(not(target_arch = "wasm32"))]
 pub async fn main() {
-    unsafe { backtrace_on_stack_overflow::enable() };
     let args = Cli::parse();
 
     if let Some(generator) = args.generator {
