@@ -51,9 +51,8 @@ pub async fn main() {
             }
         }
     } else {
-        // init_logger();
-        // error!("No command provided");
-        println!("No cmd");
+        init_logger();
+        error!("No command provided");
         std::process::exit(1)
     }
 }
